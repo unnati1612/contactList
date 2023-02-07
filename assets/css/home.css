@@ -1,0 +1,69 @@
+body{
+    text-align: center;
+    /* background-color: aqua; */
+    margin: 20px;
+    font-family: sans-serif;
+}
+
+#page-header{
+   
+    text-align: center;
+    margin-top: 25px;
+    color: blue;
+}
+p{
+    /* padding-top: 15px; */
+    padding-left: 10px;
+    display: inline-block;
+  margin: 0;
+    height: 20px;
+    width: 200px;
+    
+    
+}
+
+ul{
+    list-style: none;
+    text-align: left;
+}
+#box{
+   margin-left: 350px;
+   width: 700px;
+
+}
+
+ #contact{
+     padding: 5px;
+     width:450px;
+     height: 20px;
+     display: flex;
+     /* display: inline-block; */
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center;
+     background-color: pink;
+     margin-bottom: 10px;
+ }
+
+li{
+    width:400px;
+     height: 20px;
+     margin-bottom: 20px;
+
+}
+ li:hover{
+     background-color: lavender;
+ }
+
+ input{
+     margin: 20px;
+     border: none;
+     border-bottom: 1px solid black;
+ }
+
+ button{
+     font-size: 1rem;
+     margin-left: 10px;
+ }
+
+ 

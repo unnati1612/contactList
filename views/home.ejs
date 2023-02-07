@@ -1,0 +1,48 @@
+<html>
+    <head>
+            <title>
+                <%= title %>
+            </title> 
+            <script src="https://kit.fontawesome.com/5ba87fdece.js" crossorigin="anonymous"></script>
+            <link rel="stylesheet" type="text/css" href="/css/home.css">
+  
+      
+   </head>
+
+    <body>
+   
+
+        <h1 id="page-header">
+            <i class="fa-solid fa-address-book"></i>
+            My Contact List
+        </h1>
+        <div id="box">
+        <ul>
+            <% for(let i of contact_list){%>
+                <li>
+                    <div id="contact">
+                    <p><%= i.name %></p>
+                    <p><%= i.contact %></p>
+
+                    <!-- it shows contact: unna instead of contact :23897 in the req params  -->
+                    <!-- <a href="deletecontact/unna"> -->
+
+                    <!--appends what contactnum and name you are trying to deletecontact -->
+                    <!-- <a href="deletecontact/?contact=<%= i.contact %>&name=<%=i.name%>"> -->
+                     
+                </div>
+                </li>
+                
+                <%}%>
+        </ul>
+    </div>
+
+
+        <form action ="/createcontact" method="POST">
+            <input type="text" name="name" placeholder="Enter Name " required>
+            <input type="number" name="contact" placeholder="Enter contact Number " required>
+            <button type="submit">Add Contact</button>
+        </form>
+        <script src="/js/home.js"></script>
+    </body>
+</html>
